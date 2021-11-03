@@ -13,6 +13,11 @@ body {
     margin: 0 auto;
 }
 
+#home {
+    margin-top: -30px;
+    
+}
+
 header {
     background: #1A1A1A;
 }
@@ -28,6 +33,13 @@ nav ul {
     padding: 10px 0;
     list-style: disc;
     justify-content: center;
+}
+
+nav li img{
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: -20px;
+
 }
 
 nav li {
@@ -47,6 +59,11 @@ nav a:hover {
 }
 
 .nav-icons {
+    margin-bottom: -10px;
     height: 35px;
     width: 35px;
     }
+
+#in{
+
+}
