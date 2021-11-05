@@ -4,6 +4,7 @@ body {
     background: #1A1A1A;
     font-family: 'Roboto', sans-serif;
     font-stretch: normal;
+    
 }
 
 /* Container pertaining to the space on the sides of the entire website */
@@ -31,10 +32,17 @@ nav ul {
     margin: 0;
     padding: 10px 0;
     list-style: disc;
+    justify-content: center;
+}
+
+nav li img{
+    margin-left: 0px;
+    margin-top: -20px;
+
 }
 
 nav li {
-    display: inline-block;
+    display: inline-flex;
     margin-left: 65px;
     padding-top: 25px;
 }
@@ -43,19 +51,14 @@ nav a {
     color:#ffffff;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 1.25em;
 }
 nav a:hover {
     color: #16A966
 }
 
-#nav-icons {
-    margin-left: -20px;
+.nav-icons {
     margin-bottom: -10px;
-    height: 35px;
-    width: 35px;
+    height: 35px !important;
+    width: 35px !important;
     }
-#nav-icons:hover {
-    opacity: 60%;
-    fill:#16A966;
-}
