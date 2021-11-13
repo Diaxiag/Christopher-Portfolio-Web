@@ -12,21 +12,23 @@
             <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <nav class=container>
-            <img src="imgs/chris-logo.svg" alt="logo" class="logo" width="70px" height="70px">
-            <ul>
-                   <li><a href="index.html">HOME</a></li>
-                   <li><a href="#">PROJECTS</a></li>
-                   <li><a href="#">ABOUT ME</a></li>
-                   <li><a href="#">CONTACT</a></li>
-                   <li><a href="#">RESUME</a></li>   
-                <li><a href="#"><img src="imgs/linkedin-icon.svg" alt="linkedin-logo" class="nav-icons" width="35px" height="35px"></a></li>
-                <li><a href="#"><img src="imgs/instagram-icon.svg" alt="instragram-logo" class="nav-icons" width="35px" height="35px"></a></li>
-                <li><a href="#"><img src="imgs/twitch-icon.svg" alt="twitch-logo" class="nav-icons" width="35px" height="35px"></a></li>
-              </ul>
-            </nav> <!--icon images stopped showing up on preview DO NOT use live server on VS Code-->
-   
+        <header>
+        <a class="logo" href="/"><img src="imgs/chris-logo.svg" alt="logo"></a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#"><img src="imgs/linkedin-icon.svg" id="iconSocials"></a></li>
+                <li><a href="#"><img src="imgs/instagram-icon.svg"id="iconSocials"></a></li>
+                <li><a href="#"><img src="imgs/twitch-icon.svg"id="iconSocials"></a></li>
+            </ul>
+        </nav>
+    </header>
+
 <!--HERO IMAGE-->
+<div class="heroContainer">
     <section class=herotext>
        <h1 id="name1">Christopher</h1>
        <h1 id="name2">Tran</h1>
@@ -36,7 +38,7 @@
     <section class=profile>
         <img src="imgs/ct-portrait-me.png" alt="profile-picture">
     </section>
-
+</div>
     <!--Footer Start-->
     <div class=footerContainer>
     <footer>
