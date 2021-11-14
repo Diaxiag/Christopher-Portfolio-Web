@@ -5,6 +5,7 @@ body {
     background-color: #1A1A1A !important;
     font-family: 'Roboto', sans-serif;
     font-stretch: normal;
+    height: 100%;
     }
 
 /* Container pertaining to the space on the sides of the entire website */
@@ -101,8 +102,8 @@ header {
     display: flex;
     flex-flow: row wrap;
 }
-/* Footer CSS Start */
 
+/* Footer CSS Start */
 footer {
     background: #000000;
     margin: 0 auto;
@@ -148,3 +149,142 @@ footer a:hover {
     color: #16A966;
     text-decoration: none;
 }
+
+
+/* About me CSS */
+.container {
+    display: grid;
+    max-width: 80%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1.9fr 0.2fr 0.9fr; 
+    gap: 5px 5px; 
+    grid-template-areas: 
+    "Hero-Image Hero-Image Hero-Image About-Me About-Me About-Me"
+    "Hero-Image Hero-Image Hero-Image Design-Skills UX-UI-Skills Hobbies"
+    "Hero-Image Hero-Image Hero-Image design-skill-list uxui-list hobbies-list"; 
+  }
+  
+.Hero-Image { grid-area: Hero-Image;
+                grid-row: span;
+                grid-column: span;
+                display: flex;
+                justify-items: right;
+                align-self: right;
+                padding: 10px;
+ }
+  
+.About-Me { grid-area: About-Me;
+            color: #ffffff; }
+  
+.Design-Skills { grid-area: Design-Skills;
+                 color: #ffffff;
+                background-color: #16A966;
+                justify-content: center;
+                text-align: center;
+                 }
+  
+.UX-UI-Skills { grid-area: UX-UI-Skills;
+                color: #ffffff;
+                background-color: #16A966;
+                justify-content: center;
+                text-align: center;
+                 }
+  
+.Hobbies { grid-area: Hobbies;
+           color: #ffffff;
+           background-color: #16A966;
+           justify-content: center;
+           text-align: center;
+            }
+  
+.design-skill-list li { grid-area: design-skill-list;
+                     color: #ffffff;
+                     justify-content: center;
+                     align-items: center;
+                     text-align: center;
+                     list-style-type: none;
+                     font-size: 1.25em;
+                     margin-right: 32px;
+                     }
+.uxui-list li { grid-area: uxui-list;
+             color: #ffffff;
+             justify-content: center;
+             align-items: center;
+             text-align: center;
+             list-style-type: none;
+             font-size: 1.25em;
+             margin-right: 32px }
+
+.hobbies-list li { grid-area: hobbies-list;
+                color: #ffffff;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                list-style-type: none;
+                font-size: 1.25em;
+                margin-right: 32px }
+
+ /* ProjectsCSS */
+ * {
+    box-sizing: border-box;
+  }
+ #projectBody {
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vw;
+    overflow: hidden;
+    margin: 0;
+
+  }
+
+ #projectContainer {
+        display: flex;
+        width: 90vw;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .panel {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 75vh;
+        border-radius: 50px;
+        color: #fff;
+        cursor: pointer;
+        flex: 0.5;
+        margin: 10px;
+        position: relative;
+        -webkit-transition: all 700ms ease-in;
+      }
+      
+      .panel h3 {
+        font-size: 24px;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        margin: 0;
+        opacity: 0;
+      }
+      
+      .panel.active {
+        flex: 5;
+      }
+      
+      .panel.active h3 {
+        opacity: 1;
+        transition: opacity 0.3s ease-in 0.4s;
+      }
+      
+      @media (max-width: 480px) {
+        .container {
+          width: 100vw;
+        }
+      
+        .panel:nth-of-type(4),
+        .panel:nth-of-type(5) {
+          display: none;
+        }
