@@ -1,13 +1,3 @@
-/*
-Theme Name: Lana
-Description: Creative Coming Soon Template
-Author: Erilisdesign
-Theme URI: https://preview.erilisdesign.com/html/lana/
-Author URI: https://themeforest.net/user/erilisdesign
-Version: 2.0
-License: https://themeforest.net/licenses/standard
-*/
-
 /*------------------------------------------------------------------
 [Table of contents]
 
@@ -830,3 +820,12 @@ License: https://themeforest.net/licenses/standard
   });
 
 })(jQuery);
+
+$(window).scroll(function(){
+  var myVideo = document.getElementById("vid");
+
+  if($(window).scrollTop() > 300 && $(window).scrollTop() < 975){
+     if(myVideo.played.length === 0 )
+        myVideo.play();
+  }
+})
