@@ -820,12 +820,3 @@
   });
 
 })(jQuery);
-
-$(window).scroll(function(){
-  var myVideo = document.getElementById("vid");
-
-  if($(window).scrollTop() > 300 && $(window).scrollTop() < 975){
-     if(myVideo.played.length === 0 )
-        myVideo.play();
-  }
-})
