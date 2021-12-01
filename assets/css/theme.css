@@ -20327,10 +20327,15 @@ ul {
 
 .skills {
   text-align: left;
-  padding-left: 2rem;
+  padding: 1rem;
 
 }
 
 li {
   margin-left: -15px;
+}
+
+img .projectIcons:hover {
+  transition: all .2s ease-in-out;
+  transform: scale(2.2);
 }
