@@ -214,6 +214,7 @@ th {
 }
 
 label {
+  color: red;
   display: inline-block;
   margin-bottom: 0.5rem;
 }
@@ -20336,6 +20337,27 @@ li {
 }
 
 img .projectIcons:hover {
-  transition: all .2s ease-in-out;
+  transition: all .3s ease-in-out;
   transform: scale(2.2);
 }
+
+.logoDesign {
+  color: #666;
+}
+
+.logoDesign:after {
+  position: absolute;
+  margin-top: -15px;
+  left: 10px;
+  content: '';
+  height: 30px;
+  width: 275px;
+  border-bottom: solid 3px #405BE8;
+  transition: left 250ms ease-in-out, right 250ms ease-in-out;
+  opacity: 0;
+}
+
+.logoDesign:hover:after {
+  opacity: 1;
+}
+
