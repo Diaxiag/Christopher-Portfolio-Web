@@ -112,7 +112,7 @@
 
               <h1 class="mb-4 animated" data-animation="fadeInUp">Christopher Tran</h1>
               <h3 class="mb-4 animated" data-animation="fadeInUp">Graphic / UX UI Designer</h3>
-              <p class="mb-7 animated" data-animation="fadeInUp" data-animation-delay="200">Creating a positive, beautiful and meaningful experience through design and ideas.</p>
+              <p class="mb-7 animated" data-animation="fadeInUp" data-animation-delay="200">Creating a positive, beautiful and meaningful experience through design and ideas</p>
               <a href="#our-mission" class="btn btn-white mr-3 scrollto animated" data-animation="fadeInUp" data-animation-delay="400">Learn more</a>
               <a href="#what-we-do" class="btn btn-primary mr-3 scrollto animated" data-animation="fadeInUp" data-animation-delay="400">Projects</a>
 
@@ -122,10 +122,13 @@
       </section>
 
       <!-- Section - Our mission -->
-      <section class="ln-section d-xl-flex min-vh-100" data-anchor="our-mission" data-tooltip="Our mission" data-ui="light" data-navbar="navbar-dark">
+      <section class="ln-section d-xl-flex min-vh-100" data-anchor="AboutMe" data-tooltip="AboutMe" data-ui="light" data-navbar="navbar-dark">
         <div class="overlay overlay-advanced">
-          <div class="overlay-inner bg-image-holder bg-cover">
+          <div class="overlay-inner bg-image-holder bg-cover" id="desktopOnly">
             <img src="assets/images/about-me-background.png" alt="background">
+          </div>
+          <div class="overlay-inner bg-image-holder bg-cover" id="mobileOnly">
+            <img src="assets/images/general-background.png" alt="background">
           </div>
         </div>
         <div class="container align-self-xl-center">
@@ -135,47 +138,58 @@
                 relationships that encourage and inspire a shared long-term vision.
                 I am passionate about fully understanding their mission to best support their brand. This allows me to
               continously grow and learn by using my designs, skills, and knowledge to tell stories and ideas. </p>
-                <div class="container row">
-                <div class="skills">
-                <h5 class="mb-4 animated" data-animation="fadeInUp" data-animation-delay="150">Design Skills</h5>
-                <ul class="mb-4 animated" data-animation="fadeInUp" data-animation-delay="150">
-                  <li>After Effects</li>
-                  <li>Illustrator</li>
-                  <li>InDesign</li>
-                  <li>Photoshop</li>
-                  <li>Premier Pro</li>
-                  <li>Adobe XD</li>
-                </ul>
-                </div>
-                <div class=skills>
-                  <h5 class="mb-4 animated" data-animation="fadeInUp" data-animation-delay="150">UX UI Skills</h5>
-                  <ul class="mb-4 animated" data-animation="fadeInUp" data-animation-delay="150">
-                    <li>Figma</li>
-                    <li>UX Research & UI Design</li>
-                    <li>Bootstrap</li>
-                    <li>HTML & CSS</li>
-                    <li>Responsive Web Design</li>
-                    <li>Voice Operated Interface</li>
-                  </ul>
-                  </div>
-                  <div class=skills>
-                    <h5 class="mb-4 animated" data-animation="fadeInUp" data-animation-delay="150">Self-Learned Skills</h5>
+              
+              
+              
+              <div class="row skill-cards p-3">
+              <div class="card text-white bg-dark col-lg-4 mb-3 animated" data-animation="fadeInUp" data-animation-delay="150" style="max-width: 18rem;">
+                <div class="card-header">Design Skills</div>
+                <div class="card-body">
+                  <p class="card-text">
                     <ul class="mb-4 animated" data-animation="fadeInUp" data-animation-delay="150">
-                      <li>Blender</li>
-                      <li>C# (For Unity)</li>
-                      <li>Streamlabs</li>
-                      <li>TinkerCAD</li>
-                      <li>Ultimaker Cura</li>
-                      <li>Customer Service & Relations</li>
-                    </ul>
-                    </div>
+                    <li>After Effects</li>
+                    <li>Illustrator</li>
+                    <li>InDesign</li>
+                    <li>Photoshop</li>
+                    <li>Premier Pro</li>
+                    <li>Adobe XD</li>
+                  </ul></p>
                 </div>
-          </div>
-        </div>
+                </div>
+              
+                <div class="card text-white bg-dark col-lg-4 mb-3 animated" data-animation="fadeInUp" data-animation-delay="150" style="max-width: 18rem;">
+                  <div class="card-header">UX UI Skills</div>
+                  <div class="card-body">
+                    <p class="card-text">
+                      <ul class="mb-4 animated" data-animation="fadeInUp" data-animation-delay="150">
+                        <li>Figma</li>
+                        <li>UX Research & UI Design</li>
+                        <li>Bootstrap</li>
+                        <li>HTML & CSS</li>
+                        <li>Responsive Web Design</li>
+                        <li>Voice Operated Interface</li>
+                      </ul></p>
+                  </div>
+                  </div>
 
+                  <div class="card text-white bg-dark col-lg-4 mb-3 animated" data-animation="fadeInUp" data-animation-delay="150" style="max-width: 18rem;">
+                    <div class="card-header">Self-Learned Skills</div>
+                    <div class="card-body">
+                      <p class="card-text">
+                          <ul class="mb-4 animated" data-animation="fadeInUp" data-animation-delay="150">
+                            <li>OBS StreamLabs</li>
+                            <li>TinkerCAD</li>
+                            <li>Ultimaker Cura</li>
+                            <li>Customer Service & Relations</li>
+                          </ul></p>
+                    </div>
+                    </div>
+
+                </div>
+             
       </section>
 
-      <section class="ln-section d-xl-flex bg-dark" data-anchor="what-we-do" data-tooltip="What we do" data-ui="light" data-navbar="navbar-dark">
+      <section class="ln-section d-xl-flex bg-dark" data-anchor="ForYou" data-tooltip="What can I do for you?" data-ui="light" data-navbar="navbar-dark">
         <div class="overlay overlay-advanced">
           <div class="overlay-inner bg-image-holder bg-cover">
             <img src="assets/images/general-background.png" alt="background">
@@ -185,7 +199,7 @@
           <div class="row">
             <div class="col-12 col-xl-5 mb-8 mb-xl-0">
               <h2 class="animated mb-4" data-animation="fadeInUp">What can I do for you?</h2>
-              <p class="animated" data-animation="fadeInUp" data-animation-delay="150"><span>After 5 years of being in the graphic design industry, I enrolled in a UX UI course to further hone my expertise in design. With graphic design and a focus on user experience, I can craft, mold, and create your designs through physical and digital spaces. </span></p>
+              <p class="animated" data-animation="fadeInUp" data-animation-delay="150"><span>UX designer with a background in graphic design, recently earned a certificate in UX/UI from the University of Toronto. Skilled in Illustrator, Photoshop, HTML5, CSS, JavaScript, Bootstrap, jQuery, and user-centric design research with a proficiency in delivering user experiences across desktop, mobile, tablet and other channels. <br><br> As a graphic designer, led a team to successfully meet branding and technical requirements for various projects including websites/landing pages,logos, email campaigns, and social media content creation. Strengths lie in defining and executing design strategy built on a deep understanding of both user and business needs. Specializing in user research, usability testing, information architecture, and interaction design, I aim to create interfaces that bring users joy and increase brand loyalty. </span></p>
             </div>
             <div class="col-12 col-xl-6 offset-xl-1">
               <div class="row">

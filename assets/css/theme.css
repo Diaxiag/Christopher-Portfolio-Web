@@ -20389,3 +20389,38 @@ img .projectIcons:hover {
 .portfolio-art8 { grid-area: portfolio-art8; }
 
 .portfolio-art9 { grid-area: portfolio-art9; }
+
+.card-body {
+  background-color: #000000;
+}
+
+@media (min-width: 575px) {
+ .skill-cards {
+   display: flex;
+   justify-content: center !important;
+ }
+  }
+
+  @media (max-width: 995px) {
+    .skill-cards {
+      display: flex;
+      justify-content: center !important;
+    }
+     }
+
+     @media (min-width: 995px) {
+        #mobileOnly {
+          display: none;
+        }
+       }
+       @media (max-width: 995px) {
+        #desktopOnly {
+          display: none;
+        }
+       }
+
+.logoGallery img:hover {
+  filter: grayscale(100%);
+  transition: transform .45s ease-in-out;
+  transform: scale(1.1);
+}
