@@ -821,3 +821,11 @@
 
 })(jQuery);
 
+window.addEventListener('hashchange', function(){
+  console.log("test")
+  if(window.location.hash === "home"){
+  document.getElementById("vid").play()
+  }
+})
+
+
