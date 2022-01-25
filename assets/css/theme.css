@@ -20424,3 +20424,7 @@ img .projectIcons:hover {
   transition: transform .45s ease-in-out;
   transform: scale(1.1);
 }
+
+.vid {
+  width: 100%;
+}
